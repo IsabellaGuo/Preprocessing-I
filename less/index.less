@@ -19,8 +19,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
+	border:0;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -50,10 +50,114 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
 }
 
+//Start line
+//header section
+
+html{
+	font-size: 62.5%;
+
+}
+
+@favfont:{
+
+	font-family: 'Josefin Sans', sans-serif;
+}
+.show(){
+	display:flex;
+}
+
+.home nav .links{
+	.show()
+	justify-content: space-evenly;
+	padding: 2%;
+	a{
+		text-decoration: none;
+		color: grey;
+		font-size: 2rem;
+		
+	}
+	a:hover{
+		color: hotpink;
+	}
+
+	@media (max-width: 500px){
+		color: skyblue;
+	}
+	  
+}
+
+.pic{
+	width: 30%;
+	margin: 2%;
+	height: 15%;
+
+}
+.home .NC{
+	.show()
+	flex-direction: column;
+	
+}
+ul li{
+	font-size: 1.5rem; 
+}
+
+
+.intro{
+	.show()
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+	 
+}
+
+
+h1{
+	font-size: 2.5rem;
+	@favfont
+}
+h2{
+	font-size: 2rem;
+	@favfont
+}
+h3{
+	font-size: 1.5rem;
+	@favfont
+}
+p{
+	font-size: 1.5rem;
+	width: 80%;
+	margin: 3%;
+}
+.maincontent{
+	.show()
+	flex-direction: column;
+	margin: 2% 5% 1% 5%;
+	padding: 1.5%;
+
+	@media (max-width: 500px){
+		.show()
+		flex-direction: row;
+		width: 30%;
+		
+	}
+
+	}
+	
+.button{
+	color: blue;
+}
+
+
+
+
+
+
+
+ 
